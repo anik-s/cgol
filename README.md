@@ -1,4 +1,1 @@
 ### CGOL with Auth
-
-
-

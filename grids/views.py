@@ -10,6 +10,7 @@ from grids.serializer import GridSerializer
 
 from grids.grid_helper import get_new_grid_after_age
 
+
 class GridView(APIView):
 
     def get(self, request, format=None):
@@ -68,18 +69,6 @@ class GridDetailView(APIView):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-# class GridLifeSpanView(APIView):
-#
-#     def get_object(self, pk):
-#         try:
-#             return Grid.objects.get(pk=pk)
-#         except Grid.DoesNotExist:
-#             raise Http404
-#
-#     def get(self, request, pk, after, format=None):
-#         book = self.get_object(pk)
-#         serializer = GridSerializer(book)
-#         return Response(serializer.data)
 
 
 
