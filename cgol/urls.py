@@ -16,9 +16,9 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
-from grids.views import GridView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^grids/', include('grids.urls')),
+    url(r'^o/', include('oauth2_provider.urls', namespace='oauth2_provider')),
 ]
