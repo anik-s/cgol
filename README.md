@@ -8,11 +8,11 @@ client_id: <client_id>
 
 client_secret: <client_secret>
 
-grant_type: <grant_type>
+grant_type: password
 
-username: <username>
+username: <your-username>
 
-password: <password>
+password: <your-password>
 
 Client ID and Secret should be generated from the django admin panel
 
