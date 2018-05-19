@@ -1,4 +1,4 @@
-# CGOL with Auth and Docker
+# CGOL with OAuth2 and Docker
 
 
 
